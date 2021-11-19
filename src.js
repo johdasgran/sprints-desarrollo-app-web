@@ -1,6 +1,8 @@
 "use strict"
 
 
+console.log("patetic xd");
+
 globalThis.CITAS = [{
         especialidad: "odontologia",
         nombre: "Dr. Juan",
@@ -31,5 +33,5 @@ const obtenerCitasPorJornada = (especialidad, fecha_inicio, fecha_final, jornada
     return resultados.filter();
 }
 
-module.exports.obtenerCitasDisponibles = obtenerCitasDisponibles;
-module.exports.obtenerCitasPorJornada = obtenerCitasPorJornada;
+// module.exports.obtenerCitasDisponibles = obtenerCitasDisponibles;
+// module.exports.obtenerCitasPorJornada = obtenerCitasPorJornada;
