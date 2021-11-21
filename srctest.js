@@ -48,6 +48,14 @@ const obtenerCitasPorJornada=(especialidad, fecha_inicio, fecha_final, jornadaPr
 
     let resultados = obtenerCitasDisponibles(especialidad, fecha_inicio, fecha_final);
 
+
+
+    // let hora = resultados[0].hora.split(":");
+    // console.log(parseInt(hora[0]));
+    // resultado.hora = parseInt(resultados.hora);
+    // console.log(resultados[0].hora);
+
+
     if (jornadaPreferida == "mañana") {
         // console.log("win xd")
         return resultados.filter(resultado => parseInt(resultado.hora) >= 8 && parseInt(resultado.hora) <= 12);
@@ -55,8 +63,36 @@ const obtenerCitasPorJornada=(especialidad, fecha_inicio, fecha_final, jornadaPr
         return resultados.filter(resultado => parseInt(resultado.hora) >= 13 && parseInt(resultado.hora) <= 17);
     }
 
+    // return resultados.filter(resultado => jornadaPreferida == "mañana" && parseInt(resultado.hora) >= 8 && parseInt(resultado.hora) <= 12);
+
+
+    // return resultados.filter(resultado =>
+    //     if (jornadaPreferida == "mañana" && parseInt(resultado.hora) >= 8 && parseInt(resultado.hora) <= 12) {
+    //         return resultados.filter(resultado => p);
+    //     } else if (jornadaPreferida == "tarde" && parseInt(resultado.hora) >= 13 && parseInt(resultado.hora) <= 17) {
+    //         return resultados.filter(resultado => 7);
+    //     });
+
+
+
+    // return resultados.filter(function(resultado) {
+    //     if (jornadaPreferida == "mañana" && parseInt(resultado.hora) >= 8 && parseInt(resultado.hora) <= 12) {
+    //         console.log("hello baby xd")
+    //         return resultado;
+    //     } else if (jornadaPreferida == "tarde" && parseInt(resultado.hora) >= 13 && parseInt(resultado.hora) <= 17) {
+    //         console.log("no e q sea anti social e q ustede dan mala vibra <3");
+    //     }
+
+    // });
+
+
+
 }
 
 module.exports.obtenerCitasDisponibles=obtenerCitasDisponibles;
 module.exports.obtenerCitasPorJornada=obtenerCitasPorJornada;
 
+// module.exports = {
+//     obtenerCitasDisponibles,
+//     obtenerCitasPorJornada
+// }
