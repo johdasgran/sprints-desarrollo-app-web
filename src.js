@@ -33,10 +33,16 @@
 // ]
 
 
-const obtenerCitasDisponibles=(especialidad, fecha_inicio, fecha_final)=>{
+const obtenerCitasDisponibles = (especialidad, fecha_inicio, fecha_final) => {
 
     // console.log(fecha_inicio);
     // console.log(CITAS[0].fecha);
+
+    //Esto esta extraño pero bueh xd
+    //Filtre el array CITAS que concuerde así 3.1 que la especialidad de la cita sea igual al parámetro 
+    //especialidad 3.2 que la fecha de la cita sea mayor o igual al parámetro fecha_inicioy 3.3 que el la 
+    //fecha de la cita sea menor o igual al parámetro fecha_final.
+
 
     return CITAS.filter(CITA => CITA.especialidad == especialidad && CITA.fecha >= fecha_inicio && CITA.fecha <= fecha_final);
 
@@ -44,9 +50,13 @@ const obtenerCitasDisponibles=(especialidad, fecha_inicio, fecha_final)=>{
 
 }
 
-const obtenerCitasPorJornada=(especialidad, fecha_inicio, fecha_final, jornadaPreferida)=>{
+const obtenerCitasPorJornada = (especialidad, fecha_inicio, fecha_final, jornadaPreferida) => {
 
     let resultados = obtenerCitasDisponibles(especialidad, fecha_inicio, fecha_final);
+
+
+    //parseInt() convierte el string de la hora en numero entero y compara con el numero
+
 
     if (jornadaPreferida == "mañana") {
         // console.log("win xd")
@@ -57,6 +67,5 @@ const obtenerCitasPorJornada=(especialidad, fecha_inicio, fecha_final, jornadaPr
 
 }
 
-module.exports.obtenerCitasDisponibles=obtenerCitasDisponibles;
-module.exports.obtenerCitasPorJornada=obtenerCitasPorJornada;
-
+module.exports.obtenerCitasDisponibles = obtenerCitasDisponibles;
+module.exports.obtenerCitasPorJornada = obtenerCitasPorJornada;

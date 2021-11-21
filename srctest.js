@@ -1,39 +1,39 @@
-// console.log("patetic xd");
+console.log("patetic xd");
 
-// CITAS = [{
-//         especialidad: "odontologia",
-//         nombre: "Dr. Juan",
-//         fecha: "2020-01-01",
-//         hora: "08:00"
-//     },
-//     {
-//         especialidad: "medicina",
-//         nombre: "Dr. Mario",
-//         fecha: "2020-01-01",
-//         hora: "08:00"
-//     },
-//     {
-//         especialidad: "optometria",
-//         nombre: "Dr. Juan",
-//         fecha: "2020-01-01",
-//         hora: "08:00"
-//     },
-//     {
-//         especialidad: "odontologia",
-//         nombre: "Dr. Juan",
-//         fecha: "2020-01-01",
-//         hora: "13:00"
-//     },
-//     {
-//         especialidad: "odontologia",
-//         nombre: "Dr. Juan",
-//         fecha: "2020-01-01",
-//         hora: "08:00"
-//     }
-// ]
+CITAS = [{
+        especialidad: "odontologia",
+        nombre: "Dr. Juan",
+        fecha: "2020-01-01",
+        hora: "08:00"
+    },
+    {
+        especialidad: "medicina",
+        nombre: "Dr. Mario",
+        fecha: "2020-01-01",
+        hora: "08:00"
+    },
+    {
+        especialidad: "optometria",
+        nombre: "Dr. Juan",
+        fecha: "2020-01-01",
+        hora: "08:00"
+    },
+    {
+        especialidad: "odontologia",
+        nombre: "Dr. Juan",
+        fecha: "2020-01-01",
+        hora: "13:00"
+    },
+    {
+        especialidad: "odontologia",
+        nombre: "Dr. Juan",
+        fecha: "2020-01-01",
+        hora: "08:00"
+    }
+]
 
 
-const obtenerCitasDisponibles=(especialidad, fecha_inicio, fecha_final)=>{
+const obtenerCitasDisponibles = (especialidad, fecha_inicio, fecha_final) => {
 
     // console.log(fecha_inicio);
     // console.log(CITAS[0].fecha);
@@ -44,7 +44,7 @@ const obtenerCitasDisponibles=(especialidad, fecha_inicio, fecha_final)=>{
 
 }
 
-const obtenerCitasPorJornada=(especialidad, fecha_inicio, fecha_final, jornadaPreferida)=>{
+const obtenerCitasPorJornada = (especialidad, fecha_inicio, fecha_final, jornadaPreferida) => {
 
     let resultados = obtenerCitasDisponibles(especialidad, fecha_inicio, fecha_final);
 
@@ -66,15 +66,6 @@ const obtenerCitasPorJornada=(especialidad, fecha_inicio, fecha_final, jornadaPr
     // return resultados.filter(resultado => jornadaPreferida == "mañana" && parseInt(resultado.hora) >= 8 && parseInt(resultado.hora) <= 12);
 
 
-    // return resultados.filter(resultado =>
-    //     if (jornadaPreferida == "mañana" && parseInt(resultado.hora) >= 8 && parseInt(resultado.hora) <= 12) {
-    //         return resultados.filter(resultado => p);
-    //     } else if (jornadaPreferida == "tarde" && parseInt(resultado.hora) >= 13 && parseInt(resultado.hora) <= 17) {
-    //         return resultados.filter(resultado => 7);
-    //     });
-
-
-
     // return resultados.filter(function(resultado) {
     //     if (jornadaPreferida == "mañana" && parseInt(resultado.hora) >= 8 && parseInt(resultado.hora) <= 12) {
     //         console.log("hello baby xd")
@@ -89,8 +80,8 @@ const obtenerCitasPorJornada=(especialidad, fecha_inicio, fecha_final, jornadaPr
 
 }
 
-module.exports.obtenerCitasDisponibles=obtenerCitasDisponibles;
-module.exports.obtenerCitasPorJornada=obtenerCitasPorJornada;
+// module.exports.obtenerCitasDisponibles=obtenerCitasDisponibles;
+// module.exports.obtenerCitasPorJornada=obtenerCitasPorJornada;
 
 // module.exports = {
 //     obtenerCitasDisponibles,
