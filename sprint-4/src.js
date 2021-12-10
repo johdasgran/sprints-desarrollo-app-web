@@ -21,7 +21,6 @@ app.get('/api/medical-appointments/apointments', (req, res) => {
 
 
 ///api/medical-appointments/confirm/:appointment_id
-///api/medical-appointments/confirm/:appointment_id
 app.post('/api/medical-appointments/confirm/:appointment_id', (req, res) => {
 
     // console.log(req.params)
@@ -43,7 +42,7 @@ app.post('/api/medical-appointments/confirm/:appointment_id', (req, res) => {
 
 
 
-
+//TEST PORT 3000
 
 // app.listen(port, () => {
 //     console.log(`Servidor corriendo por el puerto => ${port}`)
