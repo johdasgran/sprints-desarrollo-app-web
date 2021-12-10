@@ -15,7 +15,6 @@ app.use(express.json());
 ///api/medical-appointments/apointments
 app.get('/api/medical-appointments/apointments', (req, res) => {
 
-    // console.log(appointment.id);
     res.status(200).json(appointments);
 
 });
